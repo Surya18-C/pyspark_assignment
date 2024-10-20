@@ -3,9 +3,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
 
-
-
-# Function to handle the entire process
 def process_credit_cards(spark):
     # Sample data
     data = [("1234567891234567",),

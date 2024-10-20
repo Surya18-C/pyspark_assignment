@@ -37,8 +37,11 @@ def iphone13_to_iphone14(purchase_data_df):
     iphone13 = purchase_data_df.filter("product_model = 'iphone13'").select("customer")
     iphone14 = purchase_data_df.filter("product_model = 'iphone14'").select("customer")
     return iphone13.intersect(iphone14)
+
 def product_unique(df1,df2):
     count1 = df1.groupBy("customer").agg(countDistinct("product_model").alias("distinct_count"))
     count2 = df2.count()
     result=count1.filter(count1.distinct_count==count2)
     return result
+
+#code

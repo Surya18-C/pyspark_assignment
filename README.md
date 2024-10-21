@@ -27,7 +27,8 @@ Decrease the partition size back to its original partition size
 
 6.output should have 2 columns as card_number, masked_card_number(with output of question 2)
 
-Question:
+
+3.Question:
 Create a Data Frame with custom schema creation by using Struct Type and Struct Field 2.Column names should be log_id, user_id, user_activity, time_stamp using dynamic function
 
 Write a query to calculate the number of actions performed by each user in the last 7 days
@@ -38,7 +39,9 @@ Write the data frame as a CSV file with different write options except (merge co
 
 Write it as a managed table with the Database name as user and table name as login_details with overwrite mode.
 
-Question
+
+
+4. Question
 Read JSON file provided in the attachment using the dynamic function
 
 flatten the data frame which is a custom schema
@@ -57,7 +60,9 @@ create 3 new columns as year, month, and day from the load_date column
 
 write data frame to a table with the Database name as employee and table name as employee_details with overwrite mode, format as JSON and partition based on (year, month, day) using replacing where condition on year, month, day
 
-Question
+
+
+5.Question
 create all 3 data frames as employee_df, department_df, country_df with custom schema defined in dynamic way
 
 Find avg salary of each department
